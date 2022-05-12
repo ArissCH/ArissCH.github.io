@@ -15,8 +15,10 @@
 - มีการจัดลำดับให้ผู้เล่นตอนจบเกมด้วยได้เเก่ Beginner Intermediate Professional เเละ Master
 ## คลิปการเล่น
 [คลิปการเล่น](https://www.youtube.com/watch?v=KzMatibjpSg&feature=youtu.be)
-##โปสเตอร์
+## โปสเตอร์
 
+## ลิ้งค์ผลงาน
+[ผลงาน](https://wokwi.com/projects/330973699527148114)
 ## สมาชิกกลุ่ม
 1. นางสาวอริศรา จันทรมณี 64070116
 2. นายเอกฯัฐ หิรัญนุชนาถ 64070118
