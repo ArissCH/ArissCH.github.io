@@ -16,7 +16,7 @@
 ## คลิปการเล่น
 [คลิปการเล่น](https://www.youtube.com/watch?v=KzMatibjpSg&feature=youtu.be)
 ## โปสเตอร์
-
+![poster-1](https://cdn.discordapp.com/attachments/796636594735153182/974673510708424725/unknown.png)
 ## ลิ้งค์ผลงาน
 [ผลงาน](https://wokwi.com/projects/330973699527148114)
 
