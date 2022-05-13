@@ -1,3 +1,384 @@
 <html>
-    <h1>Hii</h1>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Sans+Thai+Looped:wght@400;600&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+    <title>Let's Start
+    </title>
+    <style>
+      /*
+      font-family: 'Chonburi', cursive;
+      font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+      font-family: 'Noto Sans Thai', sans-serif; 
+      */
+      body{
+        --ci1:hsl(225, 25%, 9%);
+        --ci2:hsl(218, 50%, 20%);
+        --ci3:hsl(230, 23%, 41%);
+        --ci4:hsl(207, 15%, 47%);
+        --ci5:hsl(351, 32%, 35%);
+        --ci6:hsl(318, 6%, 57%);
+        background: linear-gradient(hsl(318, 15%, 80%), hsl(218, 50%, 80%), hsl(318, 15%, 80%));
+        margin:0;
+        font-family:sans-serif;
+        color:#357;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+      }
+      .bg-ci1{
+        background-color:var(--ci1) !important}
+      .bg-ci2{
+        background-color:var(--ci2) !important}
+      .bg-ci3{
+        background-color:var(--ci3) !important}
+      .bg-ci4{
+        background-color:var(--ci4) !important}
+      .bg-ci5{
+        background-color:var(--ci5) !important}
+      .bg-ci6{
+        background-color:var(--ci6) !important}
+      .cl-ci1{
+        color:var(--ci1) !important}
+      .cl-ci2{
+        color:var(--ci2) !important}
+      .cl-ci3{
+        color:var(--ci3) !important}
+      .cl-ci4{
+        color:var(--ci4) !important}
+      .cl-ci5{
+        color:var(--ci5) !important}
+      .cl-ci6{
+        color:var(--ci6) !important}
+      a{
+        text-decoration:none;
+        color:hsl(230, 23%, 30%);
+      }
+      a:hover{
+        color:var(--ci4);
+      }
+      nav{
+        height:64px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        box-sizing:border-box;
+        box-shadow:0px 5px 10px #0008;
+        font-family: 'Noto Sans Thai', sans-serif;
+      }
+      nav .site{
+        width:4rem;
+        margin-left:1rem;
+      }
+      nav .nav-items{
+        height:100%;
+        width:calc(100% - 5rem);
+        display:flex;
+        justify-content:flex-end;
+      }
+      nav a{
+        height:100%;
+        display:inline-flex;
+        align-items:center;
+        padding:0 1em ;
+        font-weight:bold;
+        transition:all .2s;
+      }
+      nav a:hover{
+        color:white;
+        background:var(--ci2);
+        box-shadow: 0 8px 16px 0 hsl(318, 6%, 57%), 0 6px 20px 0 hsl(318, 6%, 57%);
+      }
+      .logo{
+        font-size:2rem;
+        color:var(--ci3);
+      }
+      #header{
+        height:50vw;
+        font-size:4vw;
+        box-sizing:border-box;
+        text-align:center;
+        background-image:
+          url(https://cdn.discordapp.com/attachments/968338315977822276/974659972967305286/classic-snake-featured.jpg);
+        background-size:cover;
+        background-position:center;
+        color:#fff9;
+        display:flex;
+        background-attachment:fixed;
+        position:relative;
+      }
+      .header-inner{
+        background-image:
+          linear-gradient(to bottom,#0004,#000c);
+        width:100%;
+        height:100%;
+        justify-content:center;
+        align-items:center;
+        display:flex;
+        flex-flow:column wrap;
+        font-family: 'Chonburi', cursive;
+      }
+      .header-inner h1,.header-inner h2{
+        margin:0;
+        text-shadow:0px 0px 10px #063970;
+      }
+      .header-inner h2{
+        font-size:2em;
+        color:#fff;
+        
+      }
+      #palette{
+        display:flex;
+        width:max-content;
+        margin:auto;
+        margin-top:-40px;
+        position:relative;
+        z-index:10;
+      }
+      .palette-color{
+        width:70px;
+        height:70px;
+        background:grey;
+        border-radius:50%;
+        margin-left:1.5em;
+        border:.5em solid hsl(230, 23%, 90%);
+        /*         box-sizing:border-box; */
+        box-shadow:0px 5px 10px #0002;
+      }
+      .palette-color
+      .palette-color:first-child{
+        margin:0;
+      }
+      .article{
+        max-width:900px;
+        margin:auto;
+        padding:2em;
+      }
+      .title{
+        color:yellow;
+        border-radius: 15px;
+        background:hsl(225, 25%, 20%);
+        padding: 20px; 
+        width: 380px;
+        height: 35px;  
+        font-size:2em;
+        font-family: 'Noto Sans Thai', sans-serif;
+        font-family: 'Chonburi', cursive;
+      }
+      .subtitle{
+        font-size:1.4em;
+        color:var(--ci2);
+        font-family: 'Noto Sans Thai', sans-serif;
+      }
+      .lead{
+        font-family: 'Noto Sans Thai', sans-serif;
+      }
+      .pic{
+        width:100%;
+        border-radius:15px;
+        box-shadow:0px 5px 10px #0005;
+        margin:1em 0 2em;
+        filter: drop-shadow(8px 8px 10px gray);
+      }
+      .hr{
+        position: relative;
+        display:block;
+        width:200px;
+        top:1000px;
+        background:var(--ci5);
+        height:4px;
+        margin:auto;
+      }
+      #footer{
+        background:var(--ci3);
+        background-image:linear-gradient(to top,#0000,#0004), url(https://www.teahub.io/photos/full/285-2857049_alabama-black-snake-meme.jpg);
+        filter: brightness(0.75);
+        transform:translateY(200px);
+        padding:2em 1 3em;
+        color:#ffff;
+        background-size:cover;
+        background-position:top center;
+        font-family: 'Noto Sans Thai', sans-serif;
+        position:relative;
+      }
+
+      #copy{
+        background:var(--ci4);
+        color:white;
+        padding:1em 0;
+        text-align:center;
+        font-size:.8em;
+        font-weight:700;
+        color:#fff8;
+        font-family: 'Noto Sans Thai', sans-serif;
+      }
+      .social{
+        font-size:2em;
+      }
+      .caption{
+        text-align:center;
+        font-style:italic;
+        color:var(--ci3);
+        margin-bottom:2em;
+        font-family: 'Noto Sans Thai', sans-serif;
+      }
+      blockquote {
+        margin: 2em;
+        background: #f4f5f5;
+        padding: 1em;
+        font-size: 1.3em;
+        border-left: 10px solid var(--ci1);
+        border-radius: 10px;
+        font-family: 'Noto Sans Thai', sans-serif;
+
+      }
+      .output{
+        position:relative;
+        width:10px;
+        height:10px;
+        left:350px;
+        font-size:1.5em;
+        justify-content:center;
+        text-align:left;
+      }
+      .button{
+        position:relative;
+        width:10px;
+        height:10px;
+        top:150px;
+        left:50px;
+        font-size:1.5em;
+        justify-content:center;
+        text-align:left;
+      }
+      .text{
+        position:relative;
+        width:10px;
+        height:10px;
+        top:220px;
+        left:50px;
+        font-size:1.5em;
+        justify-content:center;
+        text-align:left;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="site">
+       
+      </div>
+    </nav>
+    <section id="header">
+      <div class="header-inner">
+        <h1>
+          Mini Project
+        </h1>
+        <h2 style="font-weight:200">
+          Snake game Arduino
+        </h2>
+      </div>
+    </section>
+
+    <section class="article">
+      <h2 class="title" style="position:relative;transform:translateX(13vw);text-color:#E8DF17;">
+        Snake game Arduino
+      </h2>
+      <img      src="https://cdn.discordapp.com/attachments/968338315977822276/974639919496568902/unknown.png" class="pic">
+      <p class="lead cl-ci5">
+        <b>snake game :</b> เป็นเกมที่ต้องกดปุ่มเพื่อบังคับทิศทางให้งูกินผลไม้ให้ครบทั้งหมด 10 ลูก และถ้าหากชนที่ขอบหรือตัวงูก็จะทำให้จบเกมทันที โดยที่แต่ละครั้งที่กินผลไม้ได้จะทำให้ความเร็วของตัวงูนั้นเพิ่มขึ้น เพื่อเพิ่มระดับความยาก โดยที่จะมีการจัดระดับทั้งหมด 4 ระดับ คือ<br>
+๐ กินได้ตั้งแต่ 1-3 ลูก คือ Biginner<br>
+๐ กินได้ตั้งแต่ 4-5 ลูก คือ Intermediate<br>
+๐ กินได้ตั้งแต่  6-8 ลูก คือ Professional<br>
+๐ กินได้ตั้งแต่ 9 ลูกขึ้นไป คือ Master
+      </p>
+      <br>
+        <img src="https://cdn.discordapp.com/attachments/796636594735153182/974659780343902208/unknown.png" style="position:absolute;">
+        
+        <g class="output">การแสดงผลของเกม(output)<br>จะแสดงผลผ่านหน้าจอssd1306 <br>ที่ต่อเข้ากับ arduino board</g>
+
+      </p>
+      <img src="https://cdn.discordapp.com/attachments/968338315977822276/974666268516941824/2022-05-12_4.png" style="transform:scale(0.5)translateX(50em);position:absolute;">
+      <g class="button">
+        <p>
+        <b>ส่วนของปุ่มบังคับทิศทาง</b><br>
+  ในตัวเกมนั้นจะสามรถทำให้งูเปลี่ยน<br>
+  ทิศทางได้โดยการกดปุ่มทั้งหมด 4 ปุ่ม คือ<br>
+      ๐ ปุ่มสีแดง คือ ด้านบน<br>
+      ๐ ปุ่มสีเขียว คือ ด้านขวา<br>
+      ๐ ปุ่มสีน้ำเงิน คือ ด้านล่าง<br>
+      ๐ ปุ่มสีเหลือง คือ ด้านซ้าน<br>
+      </p>
+      </g>
+      
+    <img src="https://cdn.discordapp.com/attachments/968338315977822276/974696966212706364/Group_1.png" style="position:relative;transform:translateY(180px)translateX(16vw);">
+      
+      <img src="https://cdn.discordapp.com/attachments/968338315977822276/974677940816187422/2022-05-13_4.png" style="position:relative;transform:translateY(240px)">
+      <g class="text">
+      <p>
+       ส่วน Setup ของตัวเกมจะติดต่อระหว่างบอร์ด Arduino กับ SSD ด้วยคำสั่ง Serial. Begin เพื่อกำหนดอัตราความเร็วในการรับส่ง หากระหว่างตัวบอร์ดเเละหน้าจอเกิดปัญหาขึ้นเเละไม่สามารถเชื่อมต่อกันได้จะขึ้นข้อความ Error ขึ้นมา เเละจะมี loop คำสั่ง INPUT_PULLUP ด้านล่างจะให้เป็นสัญญานของINPUT หลังจากนั้น run function ของ setupgame()
+      </p>
+   
+        </g>
+
+       <img src="https://media.discordapp.net/attachments/968338315977822276/974684368633217144/2022-05-13_6.png" style="position:relative;transform:translateY(220px)">
+      <g class="text">
+      <p>
+      ButtonPress() จะทำการอ่านค่าจากการกดปุ่มเเละreturnค่าเป็นBoolean
+        กลับไปนำไปใช้ในตอนเริ่มเกม <br>
+      readdirection()  รับทิศทางจากการกดปุ่ม
+      </p>
+   
+        </g>
+       <img src="https://cdn.discordapp.com/attachments/968338315977822276/974691217453494292/2022-05-13_9.png" style="position:relative;transform:translateY(220px)">
+      <g class="text">
+      <p>
+      loop การทำงานของตัวเกม จะเเบ่งออกเป็น 3 state หลักๆคือ start(ก่อนเริ่มเกม) running(รันตัวเกม) เเละ gameover(จบเกม) เเต่ละ  state ก็จะมีคำสั่งเเละ function ตามเเต่ละ state ของตัวเอง
+      </p>
+        </g>
+
+     <img src="https://media.discordapp.net/attachments/968338315977822276/974692155991928832/2022-05-13_11.png" style="position:relative;transform:translateY(220px);">
+      <g class="text">
+      <p>
+      movesnake()  function การเคลื่อนไหวของงูเป็นการการหนดทิศทางตามเเนวเเกน X,Y
+      </p>
+        </g>
+ <img src="https://cdn.discordapp.com/attachments/968338315977822276/974696121723134032/2022-05-13_15.png" style="position:relative;transform:translateY(220px)">
+      <g class="text">
+      <p>
+      checkFruit()  function การเก็บผลไม้หากเก็บได้ความยาวของเเละความเร็วของงูจะเพิ่มขึ้น<br>
+      generateFruit() function การเกิดของผลไม้ จะสุ่มเลขเเละนำเลขมากำหนดตำเเหน่งx,y ของผลไม้<br>
+      collision check() function เช็คการชนว่างูชนกำเเพงหรือชนหางหรือไม่เเละ return ค่า boolean กลับไป  
+        
+      </p>
+   
+        </g>
+ <img src="https://cdn.discordapp.com/attachments/968338315977822276/974695692406779925/2022-05-13_13.png" style="position:relative;transform:translateY(220px)">
+      <g class="text">
+      <p>
+      show() function การจัดเเรงค์ตามคะเเนนที่ผู้เล่นได้รับเเบ่งเป็น 4 ระดับ
+        
+      </p>
+   
+        </g>
+     
+
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="article">
+        <h3>
+         สมาชิก
+        </h3>
+        <p>
+         นางสาวอริศรา จันทรมณี 64070116<br>
+          นายเอกณัฐ หิรัญนุชนาถ 64070118<br>
+          นางสาวทัตพร ตันนารัตน์ 64070153<br>
+          นายธีราทร ชิตทนนท์ 64070165
+        </p>
+      
+      </div>
+    </footer> 
+   
+  </body>
 </html>
